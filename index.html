@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title class="title">Página inicial</title>
+        <link rel="shortcut icon" href="./img/android-chrome-512x512.png" type="image/x-icon">
+        <link rel="stylesheet" href="./Css/index.css">
+        <link rel="stylesheet" href="./Css/headerFooter.css">
+        <link rel="stylesheet" href="./Css/slider.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" />
+    </head>
+    <body>
+   <header>
+        <div class="header-container">
+           <a href="index.html"> <img src="./img/logo.png" alt="Logo"></a>
+            <nav class="nav-menu">
+                <ul>
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="#Produtos">Produtos</a>
+                    </li>
+                    <li>
+                        <a href="#">Nossa marca</a>
+                    </li>
+                    <li>
+                        <a href="#">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav>
+                <ul>
+                    <li>
+                        <button><a href="#"><i class="fa-solid fa-heart"></i></a></button>
+                    </li>
+                    <li>
+                        <button><a href="#"><i class="fa-solid fa-circle-user"></i></a></button>
+                    </li>
+                    <li>
+                        <button><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></button>
+                    </li>
+                </ul>
+            </nav>
+        <div class="menu-mobile-icon">
+                <button class="bars"><i class="fa-solid fa-bars"></i></button>
+                <button class="close"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <!-- MENU RESPONSIVO  -->
+        </div>
+        <div class="menu-mobile">
+            <ul>
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="#Produtos">Produtos</a>
+                </li>
+                <li>
+                    <a href="#">Nossa marca</a>
+                </li>
+                <li>
+                    <a href="#">Contato</a>
+                </li>
+            </ul>
+        </div>
+   </header>
+    <section>
+        <div class="showText">
+            <h2 class="textAnimatedOne">Vista seu estilo com nossas roupas!</h2>
+            <span class="textAnimatedTwo"></span>
+        </div>
+        <section class="cards">
+            <nav class="cardPromo">
+                <div class="oneCard">
+                    <span class="iconCard"><i class="fa-solid fa-bag-shopping"></i></span>
+                    <span class="textCard"> <strong>10% OFF</strong> <br> na PRIMEIRA COMPRA</span>
+                    <span class="textCard">Use o cupom <strong>DESCONTO10</strong>. <br>*Não acumulativo</span>
+                </div>
+                <div class="twoCard">
+                    <span class="iconCard"><i class="fa-solid fa-credit-card"></i></span>
+                    <span class="textCard">Até <strong>10x sem juros</strong></span>
+                    <span class="textCard">no cartão COMETS</span>
+                </div>
+                <div class="threeCard">
+                    <span class="iconCard"><i class="fa-solid fa-mobile"></i></span>
+                    <span class="textCard"><strong>10% OFF</strong> no APP na <br>primeira compra</span>
+                    <span class="textCard">Baixe o app e ganhe com <br>o cupom <strong>DESCONTO10</strong>. *Não acumulativo</span>
+                </div>
+                <div class="fourCard">
+                    <span class="iconCard"><i class="fa-solid fa-truck-fast"></i></span>
+                    <span class="textCard">Frete <strong>Grátis</strong></span>
+                    <span class="textCard">Nas compras acima <br> de R$ 400,00 </span>
+                </div>
+            </nav>
+        </section>
+    </section>
+    <section>
+        <div class="slider">
+            <div class="slides">
+                <!-- Radio buttons/ Botões de seleção da imagem -->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+
+                <!-- Imagens do Slider -->
+                <div class="slide first">
+                    <img src="./img/Academia.jpg" alt="imagem1">
+                </div>
+                <div class="slide">
+                    <img src="./img/Banner.jpg" alt="imagem2">
+                </div>
+                <div class="slide">
+                    <img src="./img/Promom.jpg" alt="imagem3">
+                </div>
+                <div class="slide">
+                    <img src="./img/Modelo.jpg" alt="imagem4">
+                </div>
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+            </div>
+            <div class="manual-navigation">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+        </div>
+    </section>
+    <main>
+        <section id="Produtos" class="produtos">
+                <h1>Camisetas</h1>
+                <!-- <h1>Camisetas</h1> -->
+            <div class="produtos-container">
+                <div class="produto prod1">
+                    <a href="item.html"><img src="./img/frente branca.png"></a>
+                    <span>Camiseta dry wolf branco </span>
+                    <h3>R$130,00</h3>
+                    <a href="item.html"><button>Comprar</button></a>
+                </div>
+                <div class="produto prod2">
+                    <a href="item.html"><img src="./img/frente branca.png"></a>
+                    <span>Camiseta dry wolf branco </span>
+                    <h3>R$130,00</h3>
+                    <a href="item.html"><button>Comprar</button></a>
+                </div>
+                <div class="produto prod3">
+                    <a href="item.html"><img src="./img/frente branca.png"></a>
+                    <span>Camiseta dry wolf branco </span>
+                    <h3>R$130,00</h3>
+                    <a href="item.html"><button>Comprar</button></a>
+                </div>
+                <div class="produto prod4">
+                    <a href="item.html"><img src="./img/frente branca.png"></a>
+                    <span>Camiseta dry wolf branco </span>
+                    <h3>R$130,00</h3>
+                    <a href="item.html"><button>Comprar</button></a>
+                </div>
+                <div class="produto prod5">
+                    <a href="item.html"><img src="./img/frente branca.png"></a>
+                    <span>Camiseta dry wolf branco </span>
+                    <h3>R$130,00</h3>
+                    <a href="item.html"><button>Comprar</button></a>
+                </div>
+                <div class="produto prod6">
+                    <a href="item.html"><img src="./img/frente branca.png"></a>
+                    <span>Camiseta dry wolf branco </span>
+                    <h3>R$130,00</h3>
+                    <a href="item.html"><button>Comprar</button></a>
+                </div>
+                <div class="produto prod7">
+                    <a href="item.html"><img src="./img/frente branca.png"></a>
+                    <span>Camiseta dry wolf branco </span>
+                    <h3>R$130,00</h3>
+                    <a href="item.html"><button>Comprar</button></a>
+                </div>
+                <div class="produto prod8">
+                    <a href="item.html"><img src="./img/frente branca.png"></a>
+                    <span>Camiseta dry wolf branco </span>
+                    <h3>R$130,00</h3>
+                    <a href="item.html"><button>Comprar</button></a>
+                </div>
+                <div class="produto prod9">
+                    <a href="item.html"><img src="./img/frente branca.png"></a>
+                    <span>Camiseta dry wolf branco </span>
+                    <h3>R$130,00</h3>
+                    <a href="item.html"><button>Comprar</button></a>
+                </div>
+                <div class="produto prod10">
+                    <a href="item.html"><img src="./img/frente branca.png"></a>
+                    <span>Camiseta dry wolf branco </span>
+                    <h3>R$130,00</h3>
+                    <a href="item.html"><button>Comprar</button></a>
+                </div>
+                <div class="produto prod11">
+                    <a href="item.html"><img src="./img/frente branca.png"></a>
+                    <span>Camiseta dry wolf branco </span>
+                    <h3>R$130,00</h3>
+                    <a href="item.html"><button>Comprar</button></a>
+                </div>
+                <div class="produto prod12">
+                    <a href="item.html"><img src="./img/frente branca.png"></a>
+                    <span>Camiseta dry wolf branco </span>
+                    <h3>R$130,00</h3>
+                    <a href="item.html"><button>Comprar</button></a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <section id="final">
+        <div class="final">
+            <div class="sobre">
+                <h4 class="firstFooter">Sobre</h4>
+                <h4>@amazingshirts</h4>
+                <span>É aqui que você encontra sua camisa ideal</span>
+            </div>
+            <div class="ajuda">
+                <h4 class="firstFooter">Ajuda</h4>
+                <li><a href="">Fale Conosco</a></li>
+                <li><a href="">Rastrear Pedido</a></li>
+                <li><a href="">Política de Troca e Devolução</a></li>
+                <li><a href="">Denuncie o Uso Ilegal de Marca</a></li>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <h5>Dados do vendedor - xxxxxxxx@gmail.com</h5>
+    </footer>
+</body>
+ <script crossorigin="anonymous" src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+        <script src="script.js"></script>
+        <script src="slider.js"></script>
+</html>

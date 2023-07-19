@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Roboto', sans-serif;
+}
+body{
+background-color: #ffffff;
+}
+
+section{
+max-width: 100%;
+}
+.showText{
+background-image: url(../img/city-blue-sky.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: 0 0px;
+height: 500px;
+}
+.showText{
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+user-select: none;
+}
+.textAnimatedOne{
+text-transform:capitalize;
+font-size: 28pt;
+font-weight: 700;
+color: #333;
+}
+.textAnimatedTwo {
+text-transform:capitalize;
+margin-top: 25px;
+font-size: 24pt;
+font-weight: 300;
+color: #140c41;
+}
+.cards{
+padding: 40px 15px;
+}
+.cardPromo{
+display: flex;
+justify-content: space-around;
+align-items: stretch;
+text-align: center;
+}
+.oneCard, .twoCard, .threeCard, .fourCard{
+display: flex;
+flex-direction: column;
+}
+.iconCard{
+font-size: 3.5rem;
+color: #0f66d8;
+}
+.textCard{
+margin-top: 20px;
+font-weight: 300;
+color: #4d2528;
+user-select: none;
+}
+.produtos {
+    margin: 85px 0;
+    font-size: 18pt;
+    text-align: center;
+}
+.produtos-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 0 15px;
+    margin-top: 25px;
+}
+
+.produto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    max-width: 320px;
+    padding: 15px;
+    margin: 15px 0;
+}
+.produto img{
+    background: #e6d8d891;
+    width:75%;
+    padding: 15px;
+    border: 2px solid #ffffffa4;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 1px #3333337a;
+    cursor: pointer;
+    transition: .45s;
+}
+.produto img:hover{
+    padding: 1px;
+    transform: scale(1.05);
+    border: 2px solid #493a3abb;
+    box-shadow: 0px 0px 10px 1px #f04d4da4;
+}
+.produto span, h3{
+    margin-top: 15px;
+    font-size: 16pt;
+    font-weight: 500;
+    color: #333;
+}
+.produto button{
+    margin-top: 10px;
+    background: #e7dfdf;
+    font-size: 14pt;
+    font-weight: 700;
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 10px  25px;
+    cursor: pointer;
+    transition: 1s;
+}
+.produto button:hover{
+    background: #494949;
+    border: 2px solid #b3b3b3;
+    color: #fffbfb;
+    transform: scale(1.2);
+}
+
+/* Midias querry */
+@media (max-width: 630px){
+    .showText{
+    background-image: url(../img/backgroundMob.jpg);
+    }
+    .textAnimatedOne{
+        color: #e9e5e5;
+    }
+    .textAnimatedTwo {
+        color: #d8db19;
+    }
+}
+
+@media (max-width: 490px){
+    .cardPromo, .produtos-container{
+    flex-direction: column;
+    }
+    .iconCard{
+    margin-top: 2rem;
+    }
+    .textCard{
+    margin-top: 5px;
+    }
+    .produtos-container img{
+    width: 100%;
+    }
+}

@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #ffffff;
+}
+
+header{
+    background-color: #333;
+    background-size: cover;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 25px;
+    max-width: 920px;
+    margin: 0 auto;
+}
+
+.header-container img{
+    width: 65px;
+    user-select: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+nav ul{
+    display: flex;
+    gap: 25px;
+}
+.nav-menu a{
+    text-decoration: none;
+    list-style: none;
+    font-size: 12pt;
+}
+
+a{
+    font-size: 20px;
+    color: #3881e0;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+}
+a:hover{
+    color: #f55562;
+}
+
+.menu-mobile-icon, .menu-mobile {
+    display: none;
+}
+#final {
+    background: #353333;
+}
+.final{
+    max-width: 1080px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 10px;
+}
+h4, span{
+    color: #fff;
+    margin-top: 20px;
+}
+.ajuda{
+    text-align: end;
+}
+.ajuda .firstFooter{
+    margin-bottom: 20px;
+}
+.ajuda li{
+    margin-top: 5px;
+}
+
+.firstFooter{
+    font-size: 24pt;
+}
+
+footer{
+    text-align: center;
+    padding: 15px 0;
+    font-size: 18pt;
+    color: #fff;
+    background: #0d093d;
+}
+
+@media (max-width: 595px){
+    header {
+        justify-content: space-around;
+    }
+    .header-container{
+        margin-left: 25px;
+    } 
+    .header-container nav{
+        display: none;
+    }
+    .menu-mobile-icon{
+        display: block;
+        margin-left: 60%;
+    }
+    .menu-mobile-icon button {
+        background-color: transparent;
+        border: none;
+        font-size: 22pt;
+       color: #3881e0;
+    }
+    
+    .close {
+        display: none;
+    }
+    .menu-mobile li{
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .menu-mobile a{
+        text-decoration: none;
+        margin-top: 20px;
+    }
+    
+    .bars.active {
+      display: none;
+      margin-right: 20px;
+      padding: 100px;
+    }
+    .close.active {
+        display: block;
+    }
+    .menu-mobile.active {
+        border-top: 2px solid #fff;
+        display: block;
+        text-align: end;
+        padding: 0 35px;
+    }
+    .menu-mobile ul {
+       padding: 5px 0 15px 0;
+    }
+    
+    .ajuda li {
+        margin-top: 15px;
+    }
+    .ajuda a{
+        font-size: 10pt;
+    }
+
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="title"> Produto xxxx</title>
+    <link rel="shortcut icon" href="./img/android-chrome-512x512.png" type="image/x-icon">
+    <link rel="stylesheet" href="./Css/headerFooter.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+</head>
+<body>
+   <header>
+        <div class="header-container">
+           <a href="index.html"> <img src="./img/logo.png" alt="Logo"></a>
+            <nav class="nav-menu">
+                <ul>
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="#">Produtos</a>
+                    </li>
+                    <li>
+                        <a href="#">Nossa marca</a>
+                    </li>
+                    <li>
+                        <a href="#">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav>
+                <ul>
+                    <li>
+                        <button><a href="#"><i class="fa-solid fa-heart"></i></a></button>
+                    </li>
+                    <li>
+                        <button><a href="#"><i class="fa-solid fa-circle-user"></i></a></button>
+                    </li>
+                    <li>
+                        <button><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+   </header>
+    <div class="conteudo">
+        <div class="produtos">
+            <div class="mainProd">
+                <img src="./img/camisa.jpg" alt="Hollow Knight">
+            </div>
+            <div class="colorsProd">
+                <img class="model" src="./img/camisa.jpg" alt="">
+                <img class="model" src="" alt="">
+                <img class="model" src="" alt="">
+            </div>
+        </div>
+        <div class="infoProd">
+            <div class="info">
+                <h2>Camisa main Jett <br>
+                Valorant masculina</h2>
+                <span class="preço">R$46,04</span>
+                <div class="options">
+
+                    <!-- inicio da escolha da cor -->
+                    <form class="color">
+                        <span class="titleInfo">Cor</span>
+                        <select name="" id="">
+                            <option value="select">Selecionar</option>
+                            <option value="black">Preto</option>
+                        </select>
+                    </form>
+                    
+                    <!-- Inicio seleção de tamanho -->
+                    <form class="size">
+                        <span class="titleInfo">Tamanho</span>
+                        <select name="" id="">
+                            <option value="little">P</option>
+                            <option value="mid">M</option>
+                            <option value="large">G</option>
+                            <option value="superLarge">GG</option>
+                            <option value="extraLarge">XGG</option>
+                        </select>
+                    </form>
+
+                    <!-- Inicio da quantidade -->
+                    <div class="amount">
+                        <span class="titleInfo">Quantidade</span>
+                        <div class="conteudo">
+                            <button class="menos"><i class="fa-solid fa-minus"></i></button>
+                            <input type="number">
+                            <button class="mais"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                </div>
+
+                        <!-- Botão comprar  -->
+                        <div class="buy">
+                            <button type="submit">COMPRAR</button>
+                        </div>
+
+                        <!-- Buscar cep -->
+                        <div class="getAdress">
+                            <div class="adress">
+                                <input type="text" placeholder="Insira aqui seu CEP">
+                                <button type="submit">Calcular Frete</button>
+                            </div>
+                            <a class="helpAdress" href="https://buscacepinter.correios.com.br/app/endereco/index.php">não sei meu CEP</a>
+                        </div>
+                    </div>
+                    <div class="camisetaInfo">
+                        <h5>A estampa é produzida com impressão digital (DTG) e o processo é realizado com o que há de mais moderno no mercado,
+                             em impressora específica para malharia, imprimindo a arte com qualidade de definição excepcional e textura mínima sob a malha. 
+                             Malha 100% Algodão, fios penteados 30.1, acabamento reforçado na gola e nos ombros, gramatura 165 G. 
+                             As cores da camiseta e da estampa podem variar de acordo com cada monitor.
+                             Devido ao processo de aquecimento para customização, as medidas podem sofrer variações de até 3cm.</h5>
+                             <button class="ban">Denuncie o uso ilegal de estampas</button>
+                    </div>
+                    <div class="infoSizeCamiseta">
+                        <div class="camisa">
+                            <span class="camisa">Camiseta:</span>
+                            <div class="tamanho">
+                                <span class="infoSize">Tamanho</span>
+                                <span>P</span>
+                                <span>M</span>
+                                <span>G</span>
+                                <span>GG</span>
+                                <span>XGG</span>
+                            </div>
+                            <div class="altura">
+                                <span class="infoSize">Altura</span>
+                                <span>65 a 69 cm</span>
+                                <span>67 a 71 cm</span>
+                                <span>69 a 73 cm</span>
+                                <span>72 a 76 cm</span>
+                                <span>73 a 77 cm</span>
+                            </div>
+                            <div class="largura">
+                                <span class="infoSize">Largura</span>
+                                <span>46 a 50 cm</span>
+                                <span>48 a 52 cm</span>
+                                <span>53 a 57 cm</span>
+                                <span>56 a 60 cm</span>
+                                <span>59 a 63 cm</span>
+                            </div>
+                            <div class="manga">
+                                <span class="infoSize">Manga</span>
+                                <span>19.5 cm</span>
+                                <span>19.5 cm</span>
+                                <span>19.8 cm</span>
+                                <span>20.0 cm</span>
+                                <span>21.0 cm</span>
+                            </div>
+                        </div>
+                    </div>                
+            </div>
+        </div>
+    </div>
+    </div>
+    <section id="final">
+        <div class="final">
+            <div class="sobre">
+                <h4 class="firstFooter">Sobre</h4>
+                <h4>@amazingshirts</h4>
+                <span>É aqui que você encontra sua camisa ideal</span>
+            </div>
+            <div class="ajuda ">
+                <h4 class="firstFooter">Ajuda *ADICIONAR FORMA DE PAGAMENTO *logos</h4>
+                <li><a href="">Fale Conosco</a></li>
+                <li><a href="">Rastrear Pedido</a></li>
+                <li><a href="">Política de Troca e Devolução</a></li>
+                <li><a href="">Denuncie o Uso Ilegal de Marca</a></li>
+                
+            </div>
+        </div>
+    </section>
+    <footer>
+        <h5>Dados do vendedor - xxxxxxxx@gmail.com</h5>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
