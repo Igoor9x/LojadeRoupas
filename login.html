@@ -1,74 +1,148 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title class="title">Login</title>
-        <link rel="shortcut icon" href="./img/android-chrome-512x512.png" type="image/x-icon">
-        <link rel="stylesheet" href="./Css/headerFooter.css">
-        <link rel="stylesheet" href="login.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
-        crossorigin="anonymous" 
-        referrerpolicy="no-referrer" />
-    </head>
-    <body>  
-   <header>
-        <div class="header-container">
-           <a href="index.html"> <img src="./img/logo.png" alt="Logo"></a>
-            <nav class="nav-menu">
-                <ul>
-                    <li>
-                        <a href="#">Produtos</a>
-                    </li>
-                    <li>
-                        <a href="#">Nossa marca</a>
-                    </li>
-                    <li>
-                        <a href="#">Contato</a>
-                    </li>
-                </ul>
-            </nav>
-            <nav>
-                <ul>
-                    <li>
-                        <button><a href="#"><i class="fa-solid fa-heart"></i></a></button>
-                    </li>
-                    <li>
-                        <button><a href="#"><i class="fa-solid fa-circle-user"></i></a></button>
-                    </li>
-                    <li>
-                        <button><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></button>
-                    </li>
-                </ul>
-            </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title class="title">Login</title>
+    <link
+      rel="shortcut icon"
+      href="./img/android-chrome-512x512.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./Css/headerFooter.css" />
+    <link rel="stylesheet" href="login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <a href="index.html"> <img src="./img/logo.png" alt="Logo" /></a>
+        <nav class="nav-menu">
+          <ul>
+            <li>
+              <a href="index.html">Inicio</a>
+            </li>
+            <li>
+              <a href="#Produtos">Produtos</a>
+            </li>
+            <li>
+              <a href="#">Nossa marca</a>
+            </li>
+            <li>
+              <a href="#">Contato</a>
+            </li>
+          </ul>
+        </nav>
+        <nav>
+          <ul>
+            <li>
+              <button>
+                <a href="./login.html"><i class="fa-solid fa-heart"></i></a>
+              </button>
+            </li>
+            <li>
+              <button>
+                <a href="./login.html"><i class="fa-solid fa-circle-user"></i></a>
+              </button>
+            </li>
+            <li>
+              <button>
+                <a href="./login.html"><i class="fa-solid fa-cart-shopping"></i></a>
+              </button>
+            </li>
+          </ul>
+        </nav>
+        <div class="menu-mobile-icon">
+          <button class="bars"><i class="fa-solid fa-bars"></i></button>
+          <button class="close"><i class="fa-solid fa-xmark"></i></button>
         </div>
-   </header>
+        <!-- MENU RESPONSIVO  -->
+      </div>
+      <div class="menu-mobile">
+        <ul>
+          <li>
+            <a href="index.html">Inicio</a>
+          </li>
+          <li>
+            <a href="#Produtos">Produtos</a>
+          </li>
+          <li>
+            <a href="#">Nossa marca</a>
+          </li>
+          <li>
+            <a href="#">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </header>
     <main>
-        <section>
-    
-        </section>
+      <section class="formBackground">
+        <h1>
+          Faça login e continue acessando! <br />
+          Aproveite a experiência sem interrupções!
+        </h1>
+        <form onsubmit="signup(event)">
+          <div class="container">
+            <div class="imageLogin">
+              <img class="image" src="./img/ImageLogin.png" alt="" srcset="" />
+            </div>
+            <div class="loginContainer">
+              <div class="login">
+                <h2>Login</h2>
+                <label for="email">Email</label>
+                <input type="email" placeholder="Insira seu E-mail" />
+                <label for="password">Senha</label>
+                <input type="password" placeholder="Insira sua senha" />
+                <button class="btnLogar" type="submit">Entrar</button>
+                <span>Não tem uma conta na Comets ? <br />Não perca tempo e crieagora</span>
+                <button class="register">Criar conta</button>
+              </div>
+              <div class="cadastrar">
+                <h2>Cadastrar</h2>
+                <label for="name">Nome Completo</label>
+                <input id="nomeCompleto" type="text" placeholder="Insira seu nome completo" />
+                <label for="email">Email</label>
+                <input id="emailFire" type="email" placeholder="Insira seu E-mail" />
+                <label for="password">Insira sua Senha </label>
+                <input id="passwordFire" type="password" placeholder="Insira uma senha" />
+                <label for="password">Insira sua Senha novamente</label>
+                <input  id="passwordAgainFire" type="password"placeholder="Insira novamente sua senha"/>
+                <button class="btnCadastrar" type="submit">Criar Conta</button>
+                <span>Já te uma conta ? <br />Faça Seu Login.</span>
+                <button class="btnLogin">Fazer Login</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </section>
     </main>
-
-    <!-- COLOCAR CERTO, FOOTER NO TOPO -->
-   <section id="final">
-        <div class="final">
-            <div class="sobre">
-                <h4 class="firstFooter">Sobre</h4>
-                <h4>@amazingshirts</h4>
-                <span>É aqui que você encontra sua camisa ideal</span>
-            </div>
-            <div class="ajuda">
-                <h4 class="firstFooter">Ajuda</h4>
-                <li><a href="">Fale Conosco</a></li>
-                <li><a href="">Rastrear Pedido</a></li>
-                <li><a href="">Política de Troca e Devolução</a></li>
-                <li><a href="">Denuncie o Uso Ilegal de Marca</a></li>
-            </div>
+    <section id="final">
+      <div class="final">
+        <div class="sobre">
+          <h4 class="firstFooter">Sobre</h4>
+          <h4>@amazingshirts</h4>
+          <span>É aqui que você encontra sua camisa ideal</span>
         </div>
+        <div class="ajuda">
+          <h4 class="firstFooter">Ajuda</h4>
+          <li><a href="">Fale Conosco</a></li>
+          <li><a href="">Rastrear Pedido</a></li>
+          <li><a href="">Política de Troca e Devolução</a></li>
+          <li><a href="">Denuncie o Uso Ilegal de Marca</a></li>
+        </div>
+      </div>
     </section>
     <footer>
-        <h5>Dados do vendedor - xxxxxxxx@gmail.com</h5>
+      <h5>Dados do vendedor - xxxxxxxx@gmail.com</h5>
     </footer>
-</body>
+  </body>
+  <script src="firebase.js" type="module"></script>
+  <script src="./script.js"></script>
+  <script src="auth.js"></script>
 </html>
