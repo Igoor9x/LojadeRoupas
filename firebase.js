@@ -27,7 +27,7 @@
   var password = document.getElementById("passwordFire");
   var passwordAgain = document.getElementById("passwordAgainFire");
 
-//   Função para armazenar os dados
+//   Função para armazenar os dados/ Cadastrar usuario
 //   Primeiro pegar para fazer cadastro e depois para fazer login
 window.signup = function(e){ // window.signup está vinculado ao ao form do html: ""<form onsubmit="signup(event)"></form>"
     e.preventDefault();
@@ -53,7 +53,7 @@ window.signup = function(e){ // window.signup está vinculado ao ao form do html
     alert("Senha inválida! A senha deve conter pelo menos 8 caracteres, uma letra minúscula, uma letra maiúscula e um número.");
     return;
   }
-  
+
     createUserWithEmailAndPassword(auth, obj.email, obj.password)
     .then(function(sucesso){
         alert("Sucesso")

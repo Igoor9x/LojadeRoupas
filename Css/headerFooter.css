@@ -146,6 +146,22 @@ footer{
     .menu-mobile ul {
        padding: 5px 0 15px 0;
     }
+    .iconMobile{
+        display: flex;
+        text-align: center;
+        justify-content: space-around;
+    }
+    .iconMobile ul{
+        display: flex;
+        gap: 17px; 
+    }
+    .iconMobile li {
+        padding: 0 30px;
+    }
+    .iconMobile a{
+        font-size: 18pt;
+    }
+    
     
     .ajuda li {
         margin-top: 15px;
